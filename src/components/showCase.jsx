@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import DesktopImage1 from "../assets/desktop-image-hero-1.jpg";
 import IconArrow from "../assets/icon-arrow.svg";
+import { Link } from "react-router-dom";
 
 const ShowCase = () => {
   return (
@@ -24,10 +25,10 @@ const ShowCase = () => {
               what you love.
             </p>
           </div>
-          <div className="shopBtn">
+          <Link to="/shop" className="shopLink"><div className="shopBtn">
             <div><p>SHOP NOW</p></div>
             <div><img src={IconArrow} alt="Icon Arrow" /></div>
-          </div>
+          </div></Link>
         </div>
       </main>
   );

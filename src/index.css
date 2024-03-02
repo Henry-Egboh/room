@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 :root {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -12,7 +13,7 @@
   --Very-Dark-Gray: hsl(0, 0%, 27%);
 }
 
-/* Nav component styles */
+/* ================================================Nav component styles */
 
 .nav {
   display: flex;
@@ -45,7 +46,7 @@
 .showCase {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
   padding: 0rem 4rem;
 }
@@ -62,8 +63,18 @@
   }
 }
 
+.shopLink {
+  text-decoration: none;
+  color: var(--Black);
+}
+
 .showCaseTextContainer {
   width: 80%;
+}
+
+.showCaseImage {
+  width: 100%;
+  display: block;
 }
 
 .showCaseText {
@@ -88,5 +99,34 @@
   position: absolute;
   top: 0;
   left: 2rem;
+}
+
+/* ====================================== ImageGallery component styles */
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* place-items: center; */
+  padding: 0rem 4rem;
+
+  .aboutImg {
+    width: 100%;
+  }
+
+  h2 {
+    color: var(--Black);
+    font-size: 1rem;
+    letter-spacing: 6px;
+  }
+
+  p {
+    color: var(--Dark-Gray);
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
+
+.aboutText {
+  padding: 0rem 1rem;
+  align-self: center;
 }
 
