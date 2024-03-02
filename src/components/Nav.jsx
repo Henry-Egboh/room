@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Nav = () => {
   return (
     <header className="nav">
       <div className="logo">
-        <h1><Link to="/" className="links">room</Link></h1>
+        <Link to="/" className="links">
+        <img src={logo} alt="logo" /></Link>
       </div>
       <div className="links-div">
         <Link className="links" to="/">
